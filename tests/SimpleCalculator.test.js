@@ -13,4 +13,11 @@ describe('SimpleCalculator tests', function() {
         });
     });
 
+    describe('Addition tests', function () {
+        it('should add correctly', function () {
+            var calculator = new SimpleCalculator();
+            calculator.add(5);
+            expect(calculator.value).toEqual(5);
+        });
+    });
 });
