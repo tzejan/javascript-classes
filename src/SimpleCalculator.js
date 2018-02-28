@@ -12,6 +12,10 @@ class SimpleCalculator{
         this.value -= n;
         return this;
     }
+
+    multiply(n){
+        this.value *= n;
+    }
 }
 
 module.exports = SimpleCalculator;

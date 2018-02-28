@@ -38,4 +38,11 @@ describe('SimpleCalculator tests', function() {
             expect(calculator).toEqual(subtract_return);
         });
     });
+
+    describe('Multiplication tests', function() {
+        it('should multiply correctly', function() {
+            var calculator = new SimpleCalculator(4);
+            calculator.multiply(5);
+            expect(calculator.value).toEqual(20);
+        });
 });
