@@ -45,4 +45,10 @@ describe('SimpleCalculator tests', function() {
             calculator.multiply(5);
             expect(calculator.value).toEqual(20);
         });
+        it('should return a reference to itself', function() {
+            var calculator = new SimpleCalculator();
+            var multiply_return = calculator.multiply(6);
+            expect(calculator).toEqual(multiply_return);
+        });
+    });
 });

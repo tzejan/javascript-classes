@@ -15,6 +15,7 @@ class SimpleCalculator{
 
     multiply(n){
         this.value *= n;
+        return this;
     }
 }
 
