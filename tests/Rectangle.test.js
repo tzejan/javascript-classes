@@ -16,4 +16,12 @@ describe('Unit tests for Rectangle class', function() {
         expect(rect.area()).toEqual(8);
     });
 
+    it('should return the perimeter of a Rectangle of sides 2x4 as 12', function() {
+        var rect = new Rectangle(2, 4);
+        expect(rect.perimeter()).toEqual(12);
+    });
+
+
+
+
 });
