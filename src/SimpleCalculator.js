@@ -7,6 +7,10 @@ class SimpleCalculator{
         this.value += n;
         return this;
     }
+
+    subtract(n){
+        this.value -= n;
+    }
 }
 
 module.exports = SimpleCalculator;

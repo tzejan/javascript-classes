@@ -13,8 +13,8 @@ describe('SimpleCalculator tests', function() {
         });
     });
 
-    describe('Addition tests', function () {
-        it('should add correctly', function () {
+    describe('Addition tests', function() {
+        it('should add correctly', function() {
             var calculator = new SimpleCalculator();
             calculator.add(5);
             expect(calculator.value).toEqual(5);
@@ -23,6 +23,14 @@ describe('SimpleCalculator tests', function() {
             var calculator = new SimpleCalculator();
             var add_return = calculator.add(5);
             expect(calculator).toEqual(add_return);
+        });
+    });
+
+    describe('Subtraction tests', function() {
+        it('should subtract correctly', function() {
+            var calculator = new SimpleCalculator();
+            calculator.subtract(5);
+            expect(calculator.value).toEqual(-5);
         });
     });
 });
