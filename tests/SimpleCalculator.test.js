@@ -32,5 +32,10 @@ describe('SimpleCalculator tests', function() {
             calculator.subtract(5);
             expect(calculator.value).toEqual(-5);
         });
+        it('should return a reference to itself', function() {
+            var calculator = new SimpleCalculator();
+            var subtract_return = calculator.subtract(5);
+            expect(calculator).toEqual(subtract_return);
+        });
     });
 });

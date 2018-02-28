@@ -10,6 +10,7 @@ class SimpleCalculator{
 
     subtract(n){
         this.value -= n;
+        return this;
     }
 }
 
