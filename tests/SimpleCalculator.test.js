@@ -64,4 +64,12 @@ describe('SimpleCalculator tests', function() {
             expect(calculator).toEqual(division_return);
         });
     });
+
+    describe('Chaining tests', function() {
+        it('should chain', function() {
+            var calculator = new SimpleCalculator(4);
+            calculator.divide(2).add(4).multiply(3).subtract(5);
+            expect(calculator.value).toEqual(13);
+        });
+    });
 });
