@@ -21,6 +21,15 @@ describe('Unit tests for Rectangle class', function() {
         expect(rect.perimeter()).toEqual(12);
     });
 
+     it('should return the area of a Rectangle of sides 5x10 as 50', function() {
+        var rect = new Rectangle(5, 10);
+        expect(rect.area()).toEqual(50);
+    });
+
+    it('should return the perimeter of a Rectangle of sides 5x10 as 30', function() {
+        var rect = new Rectangle(5, 10);
+        expect(rect.perimeter()).toEqual(30);
+    });
 
 
 
