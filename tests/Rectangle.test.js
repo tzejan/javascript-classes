@@ -11,4 +11,9 @@ describe('Unit tests for Rectangle class', function() {
         expect(rect.length).toEqual(10);
     });
 
+    it('should return the area of a Rectangle of sides 2x4 as 8', function() {
+        var rect = new Rectangle(2, 4);
+        expect(rect.area()).toEqual(8);
+    });
+
 });
