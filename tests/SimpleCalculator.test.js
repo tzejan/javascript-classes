@@ -19,5 +19,10 @@ describe('SimpleCalculator tests', function() {
             calculator.add(5);
             expect(calculator.value).toEqual(5);
         });
+        it('should return a reference to itself', function() {
+            var calculator = new SimpleCalculator();
+            var add_return = calculator.add(5);
+            expect(calculator).toEqual(add_return);
+        });
     });
 });

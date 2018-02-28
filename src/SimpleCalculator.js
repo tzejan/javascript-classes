@@ -5,6 +5,7 @@ class SimpleCalculator{
 
     add(n){
         this.value += n;
+        return this;
     }
 }
 
