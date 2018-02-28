@@ -58,5 +58,10 @@ describe('SimpleCalculator tests', function() {
             calculator.divide(2);
             expect(calculator.value).toEqual(2);
         });
+        it('should return a reference to itself', function() {
+            var calculator = new SimpleCalculator(6);
+            var division_return = calculator.divide(3);
+            expect(calculator).toEqual(division_return);
+        });
     });
 });
