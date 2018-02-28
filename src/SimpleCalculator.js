@@ -17,6 +17,10 @@ class SimpleCalculator{
         this.value *= n;
         return this;
     }
+
+    divide(n){
+        this.value /= n;
+    }
 }
 
 module.exports = SimpleCalculator;

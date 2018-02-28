@@ -51,4 +51,12 @@ describe('SimpleCalculator tests', function() {
             expect(calculator).toEqual(multiply_return);
         });
     });
+
+    describe('Division tests', function() {
+        it('should divide correctly', function() {
+            var calculator = new SimpleCalculator(4);
+            calculator.divide(2);
+            expect(calculator.value).toEqual(2);
+        });
+    });
 });
